@@ -6,11 +6,13 @@
   "dependencies": {},
   "devDependencies": {
     "@std/esm": "^0.15.0",
-    "lodash-es": "^4.17.4"
+    "lodash-es": "^4.17.4",
+    "mocha": "^4.0.1"
   },
   "scripts": {
     "test": "node -r @std/esm src/apple.mjs",
-    "test:index": "node index"
+    "test:index": "node index",
+    "test:mocha": "mocha -r @std/esm --recursive src/*.spec.mjs"
   },
   "author": "",
   "license": "ISC",

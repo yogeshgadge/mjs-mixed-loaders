@@ -3,4 +3,6 @@ import {banana} from './banana.mjs'
 
 banana();
 
-export default function apple() {}
+export default function apple() {
+    return banana();
+}
