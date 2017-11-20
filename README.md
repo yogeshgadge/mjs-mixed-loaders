@@ -1,10 +1,19 @@
 # Interoperability between .mjs and .js
 
-# Basic Problem
+## Does not work
 
-This all started when my mocha tests that run in node needed to consume es6 modules that depend on other es6 modules (lodash-es). 
-Taking a page out from @angularfrom Lately I have been producing libraries that are    
-   
+```bash
+node -r @std/esm ard/apple.mjs
+
+```
+
+## Works (using require) 
+
+
+```
+node index.js 
+```
+
 
 
  
