@@ -2,6 +2,6 @@
 import fs from 'fs';
 import {kale} from './kale.js';
 export function banana() {
-  kale();
+  return kale();
 }
 export function bananaMonkey() {}

@@ -2,16 +2,19 @@
   "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "apple.mjs",
   "dependencies": {},
   "devDependencies": {
     "@std/esm": "^0.15.0",
     "lodash-es": "^4.17.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node -r @std/esm src/apple.mjs",
+    "test:index": "node index"
   },
   "author": "",
   "license": "ISC",
-  "@std/esm":"cjs"
+  "@std/esm": {
+    "es": "js"
+  }
 }
