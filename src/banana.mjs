@@ -1,6 +1,7 @@
 // banana.mjs
 import fs from 'fs';
-import {kale} from './kale.js';
+import isEmpty from 'lodash-es/isEmpty'
+import kale from './kale';
 export function banana() {
   return kale();
 }

@@ -2,7 +2,7 @@
   "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "apple.mjs",
+  "main": "src/apple.mjs",
   "dependencies": {},
   "devDependencies": {
     "@std/esm": "^0.15.0",
@@ -12,11 +12,15 @@
   "scripts": {
     "test": "node -r @std/esm src/apple.mjs",
     "test:index": "node index",
-    "test:mocha": "mocha -r @std/esm --recursive src/*.spec.mjs"
+    "test:mocha:mjs": "mocha -r @std/esm --recursive src/*.spec.mjs",
+    "test:mocha:js": "mocha src/*.spec.js"
   },
   "author": "",
   "license": "ISC",
   "@std/esm": {
-    "es": "js"
+    "cjs": {
+      "interop": true
+    },
+    "esm": "js"
   }
 }
