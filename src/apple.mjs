@@ -1,5 +1,4 @@
 // apple.mjs
-debugger;
 import {banana} from './banana'
 
 banana();

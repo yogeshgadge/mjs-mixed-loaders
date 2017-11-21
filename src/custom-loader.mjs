@@ -16,7 +16,6 @@ const JS_EXTENSIONS = new Set(['.js', '.mjs']);
 
 export function resolve(specifier, parentModuleURL , defaultResolve) {
 
-    debugger;
     debuglog('here2');
     if (builtins.has(specifier)) {
         return {
