@@ -5,7 +5,7 @@
   "main": "src/apple.mjs",
   "dependencies": {},
   "devDependencies": {
-    "@std/esm": "^0.15.0",
+    "@std/esm": "^0.17.1",
     "lodash-es": "^4.17.4",
     "mocha": "^4.0.1"
   },
@@ -13,15 +13,10 @@
     "test": "node -r @std/esm src/apple.mjs",
     "test:index": "node index",
     "test:mocha:mjs": "mocha -r @std/esm --recursive src/*.spec.mjs",
-    "test:mocha:js": "mocha src/*.spec.js",
+    "test:mocha:js": "mocha src/apple.std-esm-spec.js",
     "test:resolver": "echo \"node version must be >= 8.5\" && node --experimental-modules --loader ./src/custom-loader.mjs src/apple.mjs"
   },
   "author": "",
-  "license": "ISC",
-  "@std/esm": {
-    "cjs": {
-      "interop": true
-    },
-    "esm": "js"
-  }
+  "license": "ISC"
+
 }
